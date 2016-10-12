@@ -3,4 +3,5 @@ image: node:4.2.2
 cache:
   paths:
   - node_modules/
-# /usr/local/bin
+before_script:
+  - npm install
