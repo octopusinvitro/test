@@ -33,6 +33,7 @@ This is a work in progress.
 npm install
 ```
 
+
 ## Tests
 
 The test command will run both Jasmine and ESLint.
@@ -41,4 +42,17 @@ The test command will run both Jasmine and ESLint.
 
 ```js
 npm test
+```
+
+
+## Usage
+
+You can download a Popolo file manually from [EveryPolitician](http://everypolitician.org/).
+The following example uses Åland Lagting (which is the legislature of the Åland islands, available as JSON data from the EveryPolitician page for Åland).
+
+First you'll need to require the library and read in a file from disk.
+
+```js
+var Popolo = require('everypolitician-popolo').Popolo;
+var popolo = (new Popolo()).read('ep-popolo-v1.0.json');
 ```
