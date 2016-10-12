@@ -10,6 +10,8 @@ If you want to interact with this data from Node then this module makes that tas
 
 ## About
 
+There is an ESlint configuration file to check the JS syntax.
+
 CI files have been added to be used with Travis and GitLab.
 
 
@@ -21,3 +23,17 @@ You need [Node and npm](https://docs.npmjs.com/getting-started/installing-node).
 Before you install node, you may want to install a node version manager like [nvm](https://github.com/creationix/nvm)
 
 This is a work in progress.
+
+
+### To install dependencies:
+
+```js
+npm install
+```
+
+
+### To run ESlint
+
+```js
+npm test
+```
