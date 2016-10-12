@@ -4,6 +4,7 @@
   "description": "Module to interact with data provided by the EveryPolitician project, which comes in the EveryPolitician flavor of the Popolo format",
   "main": "index.js",
   "scripts": {
+    "test": "eslint src/**/*"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/octopusinvitro/everypolitician-popolo-npm/issues"
   },
-  "homepage": "https://github.com/octopusinvitro/everypolitician-popolo-npm#readme"
+  "homepage": "https://github.com/octopusinvitro/everypolitician-popolo-npm#readme",
+  "devDependencies": {
+    "eslint": "^3.18.0"
+  }
 }
