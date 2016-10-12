@@ -10,9 +10,11 @@ If you want to interact with this data from Node then this module makes that tas
 
 ## About
 
+This project uses [Jasmine](http://jasmine.github.io/) for JavaScript tests.
+
 There is an ESlint configuration file to check the JS syntax.
 
-CI files have been added to be used with Travis and GitLab.
+Also, CI files have been added to be used with Travis and GitLab.
 
 
 ## Installing
@@ -31,8 +33,11 @@ This is a work in progress.
 npm install
 ```
 
+## Tests
 
-### To run ESlint
+The test command will run both Jasmine and ESLint.
+
+### To run the tests:
 
 ```js
 npm test
