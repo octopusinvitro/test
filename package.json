@@ -1,0 +1,23 @@
+{
+  "name": "everypolitician-popolo",
+  "version": "1.0.0",
+  "description": "Module to interact with data provided by the EveryPolitician project, which comes in the EveryPolitician flavor of the Popolo format",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/octopusinvitro/everypolitician-popolo-node.git"
+  },
+  "keywords": [
+    "data",
+    "popolo",
+    "everypolitician"
+  ],
+  "author": "Octopus in Vitro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/octopusinvitro/everypolitician-popolo-node/issues"
+  },
+  "homepage": "https://github.com/octopusinvitro/everypolitician-popolo-node#readme"
+}
