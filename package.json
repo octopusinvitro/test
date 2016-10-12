@@ -4,7 +4,8 @@
   "description": "Module to interact with data provided by the EveryPolitician project, which comes in the EveryPolitician flavor of the Popolo format",
   "main": "index.js",
   "scripts": {
-    "test": "eslint */*.js"
+    "jasmine": "jasmine",
+    "test": "jasmine && eslint */*.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/octopusinvitro/everypolitician-popolo-npm#readme",
   "devDependencies": {
-    "eslint": "^3.18.0"
+    "eslint": "^3.18.0",
+    "jasmine": "^2.5.2"
   }
 }
