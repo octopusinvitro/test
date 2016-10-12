@@ -33,6 +33,22 @@ This is a work in progress.
 npm install
 ```
 
+
+
+## Usage
+
+You can download a Popolo file manually from [EveryPolitician](http://everypolitician.org/). The following example uses [Åland Lagting](https://github.com/everypolitician/everypolitician-data/raw/master/data/Aland/Lagting/ep-popolo-v1.0.json) (which is the legislature of the Åland islands,
+available as JSON data from the
+[EveryPolitician page for Åland](http://everypolitician.org/aland/)).
+
+First you'll need to require the library and read in a file from disk.
+
+```js
+var Popolo = require('everypolitician-popolo');
+var popolo = Popolo.read('ep-popolo-v1.0.json');
+```
+
+
 ## Tests
 
 ### To run all the tests:
