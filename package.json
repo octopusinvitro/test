@@ -4,7 +4,8 @@
   "description": "Module to interact with data provided by the EveryPolitician project, which comes in the EveryPolitician flavor of the Popolo format",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine ; eslint src/**/*"
+    "jasmine": "jasmine",
+    "test": "eslint src/*"
   },
   "repository": {
     "type": "git",
