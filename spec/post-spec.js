@@ -9,7 +9,7 @@ describe('Post', function() {
     post = new Post(null, null),
 
     kenya = Popolo.read('spec/fixtures/kenya.json'),
-    kpost = new Post(kenya.posts[0], kenya);
+    kpost = kenya.posts.list[0];
 
   it('is an entity', function() {
     expect(kpost instanceof Entity).toBe(true);

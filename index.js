@@ -3,11 +3,13 @@
 var
   fs, Popolo, PopoloJSON,
   Areas,
-  Organizations;
+  Organizations,
+  Posts;
 
 fs = require('fs');
 Areas = require('./src/areas');
 Organizations = require('./src/organizations');
+Posts = require('./src/posts');
 
 Popolo = Popolo || {};
 
@@ -15,7 +17,7 @@ PopoloJSON = function(popolo) {
   this.popolo = popolo || {};
   this.areas = new Areas(popolo.areas, this);
   this.organizations = new Organizations(popolo.organizations, this);
-  this.posts = popolo.posts;
+  this.posts = new Posts(popolo.posts, this);
   this.memberships = popolo.memberships;
   this.persons = popolo.persons;
 };

@@ -9,7 +9,7 @@ describe('Posts', function() {
     posts, post,
 
     kenya = Popolo.read('spec/fixtures/kenya.json'),
-    nafasiza = new Posts(estonia.posts, estonia);
+    nafasiza = kenya.posts;
 
   it('is a collection', function() {
     expect(nafasiza instanceof Collection).toBe(true);
