@@ -1,0 +1,18 @@
+{
+  "posts": [
+  ],
+  "persons": [
+    {
+      "gender": "female",
+      "id": "4c56a67b-9ccb-4e4f-a7eb-75a5400faa07",
+      "identifiers": [
+        {
+          "identifier": "2015-1",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "name": "AHISHAKIYE Gloriose",
+      "national_identity": "HUTU"
+    }
+  ]
+}
