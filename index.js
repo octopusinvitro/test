@@ -12,6 +12,7 @@ Popolo = Popolo || {};
 PopoloJSON = function(popolo) {
   this.popolo = popolo || {};
   this.areas = new Areas(popolo.areas, this);
+  this.organizations = popolo.organizations;
   this.memberships = popolo.memberships;
   this.persons = popolo.persons;
 };
