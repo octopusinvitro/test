@@ -1,0 +1,19 @@
+{
+  "posts": [
+  ],
+  "persons": [
+    {
+      "gender": "female",
+      "id": "e12ed27b-84bf-4b57-a21f-d19c9c1716b2",
+      "identifiers": [
+        {
+          "identifier": "280",
+          "scheme": "kuvakazim"
+        }
+      ],
+      "name": "Agnes Sibanda",
+      "sort_name": "Sibanda, Agnes",
+      "summary": "Bulawayo Province Member of the Senate."
+    }
+  ]
+}
