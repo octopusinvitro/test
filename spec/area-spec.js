@@ -8,7 +8,7 @@ describe('Area', function() {
     area = new Area({ id: 'an_area', name: 'An Area' }, null),
 
     estonia = Popolo.read('spec/fixtures/estonia.json'),
-    tartu = new Area(estonia.areas[0], estonia);
+    tartu = estonia.areas.list[0];
 
   it('is an entity', function() {
     expect(tartu instanceof Entity).toBe(true);
