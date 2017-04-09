@@ -9,7 +9,7 @@ describe('Areas', function() {
     areas, tartu,
 
     estonia = Popolo.read('spec/fixtures/estonia.json'),
-    valdkondades = new Areas(estonia.areas, estonia);
+    valdkondades = estonia.areas;
 
   it('is a collection', function() {
     expect(valdkondades instanceof Collection).toBe(true);
