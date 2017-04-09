@@ -9,7 +9,7 @@ describe('Organizations', function() {
     organizations, irl,
 
     estonia = Popolo.read('spec/fixtures/estonia.json'),
-    organisatsioonid = new Organizations(estonia.organizations, estonia);
+    organisatsioonid = estonia.organizations;
 
   it('is a collection', function() {
     expect(organisatsioonid instanceof Collection).toBe(true);

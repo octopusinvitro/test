@@ -8,11 +8,11 @@ describe('Organization', function() {
     organization = new Organization(null, null),
 
     estonia = Popolo.read('spec/fixtures/estonia.json'),
-    ekre = new Organization(estonia.organizations[1], estonia),
-    riigikogu = new Organization(estonia.organizations[2], estonia),
+    ekre = estonia.organizations.list[1],
+    riigikogu = estonia.organizations.list[2],
 
     ireland = Popolo.read('spec/fixtures/ireland.json'),
-    sinnfein = new Organization(ireland.organizations[0], ireland);
+    sinnfein = ireland.organizations.list[0];
 
   it('is an entity', function() {
     expect(ekre instanceof Entity).toBe(true);

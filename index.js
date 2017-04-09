@@ -2,17 +2,19 @@
 
 var
   fs, Popolo, PopoloJSON,
-  Areas;
+  Areas,
+  Organizations;
 
 fs = require('fs');
 Areas = require('./src/areas');
+Organizations = require('./src/organizations');
 
 Popolo = Popolo || {};
 
 PopoloJSON = function(popolo) {
   this.popolo = popolo || {};
   this.areas = new Areas(popolo.areas, this);
-  this.organizations = popolo.organizations;
+  this.organizations = new Organizations(popolo.organizations, this);
   this.memberships = popolo.memberships;
   this.persons = popolo.persons;
 };
