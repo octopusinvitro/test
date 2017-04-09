@@ -1,0 +1,45 @@
+{
+  "organizations": [
+    {
+      "classification": "party",
+      "id": "SF",
+      "identifiers": [
+        {
+          "identifier": "Q76382",
+          "scheme": "wikidata"
+        }
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Sf_logo.png",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.sinnfein.ie/"
+        }
+      ],
+      "name": "Sinn Féin",
+      "other_names": [
+        {
+          "lang": "zh",
+          "name": "新芬黨",
+          "note": "multilingual"
+        },
+        {
+          "lang": "pl",
+          "name": "Sinn Féin",
+          "note": "multilingual"
+        },
+        {
+          "lang": "eu",
+          "name": "Sinn Féin",
+          "note": "multilingual"
+        },
+        {
+          "lang": "es",
+          "name": "Sinn Féin",
+          "note": "multilingual"
+        }
+      ],
+      "srgb": "008800"
+    }
+  ]
+}
