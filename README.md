@@ -66,3 +66,9 @@ This won't run the linter. To run just a file called `filename`:
 ```js
 npm run-script jasmine spec/filename.js
 ```
+
+
+## Note on the implementation
+
+The Ruby repository this module is based on subclasses the `Array` class for collections.  [It is not trivial to subclass the Array class in JavaScript](http://perfectionkills.com/how-ecmascript-5-still-does-not-allow-to-subclass-an-array/). To keep complexity low, normal inheritance was used for Collections, and the list of entities is accessed explicitly using the `list` property.
+
