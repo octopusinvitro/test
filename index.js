@@ -18,6 +18,8 @@ PopoloJSON = function(popolo) {
   this.areas = new Areas(popolo.areas, this);
   this.organizations = new Organizations(popolo.organizations, this);
   this.posts = new Posts(popolo.posts, this);
+
+  this.events = popolo.events;
   this.memberships = popolo.memberships;
   this.persons = popolo.persons;
 };
