@@ -6,6 +6,7 @@ var Collection = function(datalist, popolo) {
 
   this.indexes = {};
   this.list = this._createEntities(datalist || []);
+  // this.of_collection = {};
 };
 
 Collection.prototype.findBy = function(attributes) {
