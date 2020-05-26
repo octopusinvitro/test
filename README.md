@@ -66,3 +66,17 @@ This won't run the linter. To run just a file called `filename`:
 ```js
 npm run-script jasmine spec/filename.js
 ```
+
+
+## Note on the implementation
+
+The Ruby repository this module is based on subclasses the `Array` class for collections.  [It is not trivial to subclass the Array class in JavaScript](http://perfectionkills.com/how-ecmascript-5-still-does-not-allow-to-subclass-an-array/). To keep complexity low, normal inheritance was used for Collections, and the list of entities is accessed explicitly using the `list` property.
+
+
+## Note on circular dependencies
+
+The Ruby repository this module is based on contains circular references. This is happening when we pass the reference to the `PopoloJSON` class to all the collection constructors in the top level. For example, when you call the property `.areas`, you get the instance of areas that contains a reference to `PopoloJSON` that contains the areas, etc. If you do `.areas.popolo.areas`, you get the same instance, if you do `.areas.popolo.areas.popolo.areas` you get the same instance, etc.
+
+This was done so that there was no collection instantiation code in multiple places, so that if the interface of `Collection` changes you don't have to change it in multiple places.
+
+Circular references seem to only really be a problem when you come to garbage collect, if and only if, you have a reference counting garbage collector that doesn’t do anything to detect orphaned circular references. A quick peruse makes it look like Ruby avoids this, and JavaScript garbage collector [should manage this properly as well](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management#Cycles_are_not_a_problem_anymore).
