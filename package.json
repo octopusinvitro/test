@@ -24,6 +24,6 @@
   "homepage": "https://github.com/octopusinvitro/everypolitician-popolo-node#readme",
   "devDependencies": {
     "eslint": "^7.1.0",
-    "jasmine": "^2.5.2"
+    "jasmine": "^3.6.0"
   }
 }
